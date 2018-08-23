@@ -60,7 +60,7 @@ p7 <- ggplot(all, aes(x=Viscera.weight, colour=set)) +
 p8 <- ggplot(all, aes(x=Shell.weight, colour=set)) +
   geom_density() + 
   facet_wrap(~Rings)
-ggarrange(p1, p2, p3, p4, p5, p6, p7, p8)
+ggarrange(p1, p2, p3, p4, p5, p6, p7, p8, nrow=4, ncol=2)
 
 
 

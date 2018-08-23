@@ -1,2 +1,2 @@
 Observed accuracy: 0.960000
-Synthesized accuracy: 0.958929
+Synthesized accuracy: 0.749107

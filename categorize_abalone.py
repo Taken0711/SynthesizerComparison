@@ -4,10 +4,8 @@ import csv
 def classify(c):
     if c <= 8:
         return "1-8"
-    if c == 9:
-        return "9"
-    if c == 10:
-        return "10"
+    if c <= 10:
+        return "9-10"
     return "11+"
 
 
