@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Shell.weight &le; 0.161<br/>gini = 0.666<br/>samples = 4177<br/>value = [1342, 1476, 1359]<br/>class = 1-8>, fillcolor="#39e5810b"] ;
+1 [label=<Sex &le; 0.5<br/>gini = 0.395<br/>samples = 1314<br/>value = [993, 100, 221]<br/>class = 9-10>, fillcolor="#e58139b4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Height &le; 0.088<br/>gini = 0.632<br/>samples = 220<br/>value = [82, 41, 97]<br/>class = 11+>, fillcolor="#8139e51c"] ;
+1 -> 2 ;
+3 [label=<gini = 0.441<br/>samples = 53<br/>value = [37, 2, 14]<br/>class = 9-10>, fillcolor="#e5813996"] ;
+2 -> 3 ;
+4 [label=<gini = 0.626<br/>samples = 167<br/>value = [45, 39, 83]<br/>class = 11+>, fillcolor="#8139e54f"] ;
+2 -> 4 ;
+5 [label=<Shell.weight &le; 0.13<br/>gini = 0.291<br/>samples = 1094<br/>value = [911, 59, 124]<br/>class = 9-10>, fillcolor="#e58139cf"] ;
+1 -> 5 ;
+6 [label=<gini = 0.197<br/>samples = 890<br/>value = [794, 23, 73]<br/>class = 9-10>, fillcolor="#e58139e1"] ;
+5 -> 6 ;
+7 [label=<gini = 0.577<br/>samples = 204<br/>value = [117, 36, 51]<br/>class = 9-10>, fillcolor="#e581396e"] ;
+5 -> 7 ;
+8 [label=<Shell.weight &le; 0.402<br/>gini = 0.596<br/>samples = 2863<br/>value = [349, 1376, 1138]<br/>class = 1-8>, fillcolor="#39e58123"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Height &le; 0.119<br/>gini = 0.614<br/>samples = 2357<br/>value = [347, 980, 1030]<br/>class = 11+>, fillcolor="#8139e509"] ;
+8 -> 9 ;
+10 [label=<gini = 0.608<br/>samples = 243<br/>value = [125, 42, 76]<br/>class = 9-10>, fillcolor="#e581394b"] ;
+9 -> 10 ;
+11 [label=<gini = 0.588<br/>samples = 2114<br/>value = [222, 938, 954]<br/>class = 11+>, fillcolor="#8139e503"] ;
+9 -> 11 ;
+12 [label=<Shucked.weight &le; 0.675<br/>gini = 0.342<br/>samples = 506<br/>value = [2, 396, 108]<br/>class = 1-8>, fillcolor="#39e581b9"] ;
+8 -> 12 ;
+13 [label=<gini = 0.169<br/>samples = 247<br/>value = [0, 224, 23]<br/>class = 1-8>, fillcolor="#39e581e5"] ;
+12 -> 13 ;
+14 [label=<gini = 0.451<br/>samples = 259<br/>value = [2, 172, 85]<br/>class = 1-8>, fillcolor="#39e58180"] ;
+12 -> 14 ;
+}
